@@ -1,0 +1,5 @@
+name=x6
+schematic=pfd_p1
+spice_sym_def="tcleval(.include [abs_sym_path  pfd_pex.spice])"
+
+tclcommand="textwindow[abs_sym_path  pfd_pex.spice]"

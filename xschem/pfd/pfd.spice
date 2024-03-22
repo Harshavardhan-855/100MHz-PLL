@@ -1,0 +1,12 @@
+** sch_path: /home/vks/pll/xschem/pfd/pfd.sch
+.subckt pfd VSS VDD A QA QB B
+*.PININFO VDD:B A:B B:B QA:B QB:B VSS:B
+x1 A VDD reset VSS VSS VDD VDD QA net2 sky130_fd_sc_hd__dfrbp_2
+x2 QA QB VSS VSS VDD VDD net1 sky130_fd_sc_hd__and2_2
+x3 B VDD reset VSS VSS VDD VDD QB net3 sky130_fd_sc_hd__dfrbp_2
+x4 net1 VSS VSS VDD VDD reset sky130_fd_sc_hd__inv_4
+.ends
+
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+ 
+.end

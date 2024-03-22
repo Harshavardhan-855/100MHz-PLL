@@ -1,0 +1,33 @@
+magic
+tech sky130A
+timestamp 1709187100
+<< locali >>
+rect 628 -276 781 -251
+<< viali >>
+rect 781 -289 824 -227
+<< metal1 >>
+rect 501 -71 601 29
+rect 511 -115 583 -71
+rect 259 -251 359 -197
+rect 766 -227 866 -199
+rect 259 -276 476 -251
+rect 259 -297 359 -276
+rect 766 -289 781 -227
+rect 824 -289 866 -227
+rect 766 -299 866 -289
+rect 512 -421 574 -379
+rect 492 -521 592 -421
+use sky130_fd_sc_hd__inv_4  x4 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1705271942
+transform 1 0 426 0 1 -383
+box -19 -24 249 296
+<< labels >>
+flabel metal1 501 -71 601 29 0 FreeSans 128 0 0 0 VDD
+port 0 nsew
+flabel metal1 492 -521 592 -421 0 FreeSans 128 0 0 0 VSS
+port 3 nsew
+flabel metal1 259 -297 359 -197 0 FreeSans 128 0 0 0 inp
+port 1 nsew
+flabel metal1 766 -299 866 -199 0 FreeSans 128 0 0 0 out
+port 2 nsew
+<< end >>

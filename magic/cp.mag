@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1709709543
+<< checkpaint >>
+rect 1421 -1631 5333 1509
+<< error_s >>
+rect 144 1447 202 1453
+rect 144 1413 156 1447
+rect 144 1407 202 1413
+rect 1341 1088 1399 1094
+rect 1341 1054 1353 1088
+rect 1341 1048 1399 1054
+rect 329 714 363 732
+rect 329 678 399 714
+rect 346 644 417 678
+rect 727 644 762 678
+rect 1180 661 1214 679
+rect 144 119 202 125
+rect 144 85 156 119
+rect 144 79 202 85
+rect 346 -17 416 644
+rect 728 625 762 644
+rect 543 576 601 582
+rect 543 542 555 576
+rect 543 536 601 542
+rect 543 66 601 72
+rect 543 32 555 66
+rect 543 26 601 32
+rect 346 -53 399 -17
+rect 747 -70 762 625
+rect 781 591 816 625
+rect 781 -70 815 591
+rect 942 523 1000 529
+rect 942 489 954 523
+rect 942 483 1000 489
+rect 942 13 1000 19
+rect 942 -21 954 13
+rect 942 -27 1000 -21
+rect 781 -104 796 -70
+rect 1144 -123 1214 661
+rect 1526 295 1560 313
+rect 1526 259 1596 295
+rect 1942 284 1995 295
+rect 1543 225 1614 259
+rect 1942 250 2013 284
+rect 1341 -40 1399 -34
+rect 1341 -74 1353 -40
+rect 1341 -80 1399 -74
+rect 1144 -159 1197 -123
+rect 1543 -176 1613 225
+rect 1740 157 1798 163
+rect 1740 123 1752 157
+rect 1740 117 1798 123
+rect 1740 -93 1798 -87
+rect 1740 -127 1752 -93
+rect 1740 -133 1798 -127
+rect 1543 -212 1596 -176
+rect 1942 -229 2012 250
+rect 1942 -265 1995 -229
+use sky130_fd_pr__pfet_01v8_6QP7WZ  XM1
+timestamp 0
+transform 1 0 173 0 1 766
+box -226 -819 226 819
+use sky130_fd_pr__nfet_01v8_8LLWK3  XM2
+timestamp 0
+transform 1 0 572 0 1 304
+box -226 -410 226 410
+use sky130_fd_pr__nfet_01v8_8LLWK3  XM3
+timestamp 0
+transform 1 0 971 0 1 251
+box -226 -410 226 410
+use sky130_fd_pr__pfet_01v8_6QC8WZ  XM4
+timestamp 0
+transform 1 0 1370 0 1 507
+box -226 -719 226 719
+use sky130_fd_pr__nfet_01v8_8YFQNF  XM5
+timestamp 0
+transform 1 0 1769 0 1 15
+box -226 -280 226 280
+use sky130_fd_pr__pfet_01v8_GJYSVV  XM6
+timestamp 0
+transform 1 0 2338 0 1 1
+box -396 -319 396 319
+use sky130_fd_pr__nfet_01v8_U4BYG2  XM7
+timestamp 0
+transform 1 0 3377 0 1 -61
+box -696 -310 696 310
+<< end >>
