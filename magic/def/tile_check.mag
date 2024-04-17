@@ -1,0 +1,28 @@
+magic
+tech sky130A
+timestamp 1711533222
+use 1x2  1x2_0
+timestamp 1711524965
+transform 1 0 -4977 0 1 54134
+box 200 0 15885 22576
+use 3x2  3x2_0
+timestamp 1711525090
+transform 1 0 -4548 0 1 29930
+box 200 0 15885 22576
+use 4x2  4x2_0
+timestamp 1711524792
+transform 1 0 -5108 0 1 2825
+box 200 0 15885 22576
+use pfd  pfd_0
+timestamp 1709721316
+transform 1 0 1980 0 1 56697
+box 328 -984 2162 304
+use pfd  pfd_1
+timestamp 1709721316
+transform 1 0 -3728 0 1 56591
+box 328 -984 2162 304
+use pfd  pfd_2
+timestamp 1709721316
+transform 1 0 -980 0 1 56803
+box 328 -984 2162 304
+<< end >>

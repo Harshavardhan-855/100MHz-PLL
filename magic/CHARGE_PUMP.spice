@@ -1,0 +1,21 @@
+* NGSPICE file created from CHARGE_PUMP.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_01v8_XGAKDL a_15_n200# w_n211_n419# a_n33_n297# a_n73_n200#
+X0 a_15_n200# a_n33_n297# a_n73_n200# w_n211_n419# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PSFW3M a_n88_n100# a_n33_n188# a_n190_n274# a_30_n100#
+X0 a_30_n100# a_n33_n188# a_n88_n100# a_n190_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.3
+.ends
+
+.subckt CHARGE_PUMP qa qb cp_out vdd vss cp_bias
+XM1 vdd vdd m1_1352_628# m1_1352_628# sky130_fd_pr__pfet_01v8_XGAKDL
+XM2 vss m1_732_n18# vss m1_1352_628# sky130_fd_pr__nfet_01v8_PSFW3M
+XM4 m1_1412_898# vdd m1_1352_628# vdd sky130_fd_pr__pfet_01v8_XGAKDL
+XM3 vss m1_732_n18# vss m1_732_n18# sky130_fd_pr__nfet_01v8_PSFW3M
+XM5 vss m1_732_n18# vss m1_1502_124# sky130_fd_pr__nfet_01v8_PSFW3M
+XM6 m1_1412_898# vdd qa cp_out sky130_fd_pr__pfet_01v8_XGAKDL
+XM7 m1_1502_124# qb vss cp_out sky130_fd_pr__nfet_01v8_PSFW3M
+XM8 vdd vdd cp_bias m1_732_n18# sky130_fd_pr__pfet_01v8_XGAKDL
+.ends
+
