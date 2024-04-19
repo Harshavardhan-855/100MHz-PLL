@@ -1,0 +1,63 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1713418706
+<< checkpaint >>
+rect -697 4963 7915 5519
+rect -1311 488 7915 4963
+rect -1311 252 8133 488
+rect -1311 -2908 8631 252
+rect -1311 -2961 7915 -2908
+rect -697 -43481 7915 -2961
+rect -697 -51721 13807 -43481
+rect 5395 -57681 13807 -51721
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+use sky130_fd_sc_hd__inv_4  sky130_fd_sc_hd__inv_4_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1712078602
+transform 1 0 6873 0 1 -1600
+box -38 -48 498 592
+use pfd  x1
+timestamp 1709721316
+transform 1 0 -656 0 1 368
+box 656 -1968 4324 608
+use cp  x2
+timestamp 1709709543
+transform 1 0 3495 0 1 -1539
+box 173 -61 3378 767
+use vco  x4
+timestamp 0
+transform 1 0 0 0 1 -1648
+box 0 0 1 1
+use divider  x5
+timestamp 0
+transform 1 0 1 0 1 -1648
+box 0 0 1 1
+use sky130_fd_pr__cap_mim_m3_1_XC7TVA  XC1
+timestamp 0
+transform 1 0 3609 0 1 -23101
+box -3046 -27360 3046 27360
+use sky130_fd_pr__cap_mim_m3_1_M9A3UZ  XC4
+timestamp 0
+transform 1 0 9601 0 1 -50581
+box -2946 -5840 2946 5840
+use sky130_fd_pr__res_xhigh_po_1p41_WWG7TD  XR3
+timestamp 0
+transform 1 0 256 0 1 1001
+box -307 -2702 307 2702
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 ref
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 vdd
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 out
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 vss
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 cp_bias
+port 4 nsew
+<< end >>

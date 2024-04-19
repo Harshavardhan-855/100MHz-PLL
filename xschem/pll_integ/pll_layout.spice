@@ -1,0 +1,75 @@
+** sch_path: /home/vks/pll/xschem/pll_integ/pll_layout.sch
+.subckt pll_layout ref vdd out vss cp_bias
+*.PININFO ref:B vdd:B out:B vss:B cp_bias:B
+x1 vss vdd ref QA QB B pfd
+x2 vdd cp_bias QA_B cp_out QB vss cp_layout
+x3 QA vss vss vdd vdd QA_B sky130_fd_sc_hd__inv_4
+x4 vdd out cp_out vss VCO_Final
+x5 net2 B net3 vdd vss out divider
+XR3 net1 cp_out vss sky130_fd_pr__res_xhigh_po_1p41 L=21.42 mult=1 m=1
+XC1 net1 vss sky130_fd_pr__cap_mim_m3_1 W=28.6 L=28.8 m=9
+XC4 cp_out vss sky130_fd_pr__cap_mim_m3_1 W=22 L=30 m=2
+.ends
+
+* expanding   symbol:  pfd/pfd.sym # of pins=6
+** sym_path: /home/vks/pll/xschem/pfd/pfd.sym
+** sch_path: /home/vks/pll/xschem/pfd/pfd.sch
+.subckt pfd VSS VDD A QA QB B
+*.PININFO VDD:B A:B B:B QA:B QB:B VSS:B
+x1 A VDD reset VSS VSS VDD VDD QA net2 sky130_fd_sc_hd__dfrbp_2
+x2 QA QB VSS VSS VDD VDD net1 sky130_fd_sc_hd__and2_2
+x3 B VDD reset VSS VSS VDD VDD QB net3 sky130_fd_sc_hd__dfrbp_2
+x4 net1 VSS VSS VDD VDD reset sky130_fd_sc_hd__inv_4
+.ends
+
+
+* expanding   symbol:  cp/cp_layout.sym # of pins=6
+** sym_path: /home/vks/pll/xschem/cp/cp_layout.sym
+** sch_path: /home/vks/pll/xschem/cp/cp_layout.sch
+.subckt cp_layout vdd cp_bias qa cp_out qb vss
+*.PININFO qa:I qb:I cp_out:O vdd:B vss:B cp_bias:I
+XM9 n1 n1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+XM10 n1 bias vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 m=1
+XM11 bias bias vss vss sky130_fd_pr__nfet_01v8 L=0.30 W=1 nf=1 m=1
+XM12 n2 n1 vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+XM13 n3 bias vss vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 m=1
+XM14 cp_out qa n2 vdd sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+XM15 cp_out qb n3 vss sky130_fd_pr__nfet_01v8 L=0.3 W=1 nf=1 m=1
+XM16 bias cp_bias vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  vco/VCO_Final.sym # of pins=4
+** sym_path: /home/vks/pll/xschem/vco/VCO_Final.sym
+** sch_path: /home/vks/pll/xschem/vco/VCO_Final.sch
+.subckt VCO_Final vdd out vctrl vss
+*.PININFO vdd:B vss:B vctrl:B out:B
+XM1 pbias vctrl vss vss sky130_fd_pr__nfet_01v8 L=2 W=0.8 nf=1 m=1
+XM2 pbias pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 m=1
+XM11 r1p pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 m=1
+XM12 out1 out3 r1p vdd sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 m=1
+XM13 r1n vctrl vss vss sky130_fd_pr__nfet_01v8 L=2 W=0.8 nf=1 m=1
+XM14 out1 out3 r1n vss sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 m=1
+x1 out3 vss vss vdd vdd out sky130_fd_sc_hd__inv_2
+XM3 r2p pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 m=1
+XM4 out2 out1 r2p vdd sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 m=1
+XM5 r2n vctrl vss vss sky130_fd_pr__nfet_01v8 L=2 W=0.8 nf=1 m=1
+XM6 out2 out1 r2n vss sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 m=1
+XM7 r3p pbias vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 m=1
+XM8 out3 out2 r3p vdd sky130_fd_pr__pfet_01v8 L=0.15 W=10 nf=1 m=1
+XM9 r3n vctrl vss vss sky130_fd_pr__nfet_01v8 L=2 W=0.8 nf=1 m=1
+XM10 out3 out2 r3n vss sky130_fd_pr__nfet_01v8 L=0.15 W=5 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  divider/divider.sym # of pins=6
+** sym_path: /home/vks/pll/xschem/divider/divider.sym
+** sch_path: /home/vks/pll/xschem/divider/divider.sch
+.subckt divider b c a vdd vss clk
+*.PININFO clk:B vdd:B vss:B a:B b:B c:B
+x3 clk net1 VSS VSS VDD VDD a net1 sky130_fd_sc_hd__dfxbp_2
+x1 net1 net2 VSS VSS VDD VDD b net2 sky130_fd_sc_hd__dfxbp_2
+x2 net2 net3 VSS VSS VDD VDD c net3 sky130_fd_sc_hd__dfxbp_2
+.ends
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+.end

@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-B 2 990 -2810 2190 -2050 {flags=graph
+B 2 830 -1220 3740 -20 {flags=graph
 y1=0
 y2=2
 ypos1=0
@@ -30,8 +30,8 @@ logx=0
 logy=0
 rainbow=1
 digital=1}
-B 2 2270 -1200 4520 60 {flags=graph
-y1=-0.0027
+B 2 3760 -1260 6010 0 {flags=graph
+y1=-0.01
 y2=1.9
 ypos1=0
 ypos2=2
@@ -53,8 +53,8 @@ logy=0
 color="15 6"
 node="vco_out
 cp_out"}
-B 2 2250 -2790 4530 -1250 {flags=graph
-y1=1.2e-05
+B 2 4190 -3120 6470 -1580 {flags=graph
+y1=-2.1e-05
 y2=1.3
 ypos1=-8.5e-05
 ypos2=1.3
@@ -67,120 +67,112 @@ divx=5
 subdivx=1
 xlabmag=1.0
 ylabmag=1.0
-node="cp_out
-cp_out%1"
-color="4 4"
+node=cp_out
+color=4
 dataset=-1
 unitx=1
 logx=0
 logy=0
 rainbow=1
 digital=0}
-B 2 -640 -2780 560 -2020 {flags=graph
-y1=0
-y2=2
-ypos1=0
-ypos2=2
-divy=5
-subdivy=1
-unity=1
-x1=1e-12
-x2=2e-05
-divx=5
-subdivx=1
-xlabmag=1.0
-ylabmag=1.0
-node="A
-B"
-color="4 6"
-dataset=-1
-unitx=1
-logx=0
-logy=0
-rainbow=1
-digital=1}
-N 1190 -1940 1190 -1900 {
+N 2720 -2270 2720 -2230 {
 lab=VDD}
-N 1400 -1940 1610 -1940 {
+N 2930 -2270 3140 -2270 {
 lab=VDD}
-N 1610 -1940 1610 -1870 {
+N 3140 -2270 3140 -2200 {
 lab=VDD}
-N 1190 -1740 1190 -1640 {
+N 2720 -2070 2720 -1970 {
 lab=GND}
-N 1610 -1770 1610 -1640 {
+N 3140 -2100 3140 -1970 {
 lab=GND}
-N 1500 -1830 1540 -1830 {
+N 3030 -2160 3070 -2160 {
 lab=QA_B}
-N 1500 -1850 1500 -1830 {
+N 3030 -2180 3030 -2160 {
 lab=QA_B}
-N 1500 -1810 1540 -1810 {
+N 3030 -2140 3070 -2140 {
 lab=QB}
-N 1340 -1790 1500 -1790 {
+N 2870 -2120 3030 -2120 {
 lab=QB}
-N 1500 -1810 1500 -1790 {
+N 3030 -2140 3030 -2120 {
 lab=QB}
-N 480 -1850 480 -1820 {
+N 2010 -2180 2010 -2150 {
 lab=A}
-N 710 -2090 710 -2060 {
+N 2240 -2420 2240 -2390 {
 lab=VDD}
-N 860 -2090 860 -2060 {
+N 2390 -2420 2390 -2390 {
 lab=cp_bias}
-N 1680 -1820 1870 -1820 {
+N 3460 -2150 3560 -2150 {
 lab=cp_out}
-N 1400 -1970 1400 -1940 {
+N 2930 -2300 2930 -2270 {
 lab=VDD}
-N 1010 -1850 1040 -1850 {
+N 2540 -2180 2570 -2180 {
 lab=A}
-N 1010 -1790 1040 -1790 {
+N 2540 -2120 2570 -2120 {
 lab=B}
-N 1580 -1900 1580 -1870 {
+N 3110 -2230 3110 -2200 {
 lab=cp_bias}
-N 480 -1660 480 -1610 {
+N 2010 -1990 2010 -1940 {
 lab=#net1}
-N 480 -1760 480 -1720 {
+N 2010 -2090 2010 -2050 {
 lab=#net2}
-N 1340 -1850 1400 -1850 {
+N 2870 -2180 2930 -2180 {
 lab=QA}
-N 1480 -1850 1500 -1850 {
+N 3010 -2180 3030 -2180 {
 lab=QA_B}
-N 1610 -1940 1960 -1940 {
+N 3140 -2270 3650 -2270 {
 lab=VDD}
-N 1960 -1940 1960 -1880 {
+N 3650 -2270 3650 -2210 {
 lab=VDD}
-N 1610 -1640 1960 -1640 {
+N 3460 -1970 3650 -1970 {
 lab=GND}
-N 1960 -1760 1960 -1640 {
+N 3650 -2090 3650 -1970 {
 lab=GND}
-N 2100 -1820 2100 -1440 {
+N 3790 -2150 3790 -1770 {
 lab=vco_out}
-N 2050 -1820 2100 -1820 {
+N 3740 -2150 3790 -2150 {
 lab=vco_out}
-N 1590 -1550 1590 -1520 {
+N 3120 -1880 3120 -1850 {
 lab=VDD}
-N 1740 -1440 2100 -1440 {
+N 3270 -1770 3790 -1770 {
 lab=vco_out}
-N 1010 -1790 1010 -1410 {
+N 2540 -2120 2540 -1740 {
 lab=B}
-N 1010 -1410 1440 -1410 {
+N 2540 -1740 2970 -1740 {
 lab=B}
-N 480 -1550 480 -1520 {
+N 2010 -1880 2010 -1850 {
 lab=GND}
-N 1190 -1940 1400 -1940 {
+N 2720 -2270 2930 -2270 {
 lab=VDD}
-N 1190 -1640 1610 -1640 {
+N 2720 -1970 3140 -1970 {
 lab=GND}
-N 1710 -1750 1710 -1740 {
+N 3290 -2080 3290 -2070 {
 lab=#net3}
-N 1710 -1820 1710 -1810 {
+N 3290 -2150 3290 -2140 {
 lab=cp_out}
-N 1800 -1820 1800 -1770 {
+N 3460 -2150 3460 -2100 {
 lab=cp_out}
-C {pfd/pfd.sym} 1190 -1820 0 0 {name=x1}
-C {cp/cp.sym} 1610 -1820 0 0 {name=x2}
-C {devices/vsource.sym} 480 -1580 0 0 {name=V3 value="pulse(0 1.8 1u 1n 1n 125n 250n 22) " savecurrent=false}
-C {devices/gnd.sym} 480 -1520 0 0 {name=l4 lab=GND}
-C {devices/lab_wire.sym} 480 -1840 0 0 {name=p6 sig_type=std_logic lab=A}
-C {devices/code.sym} 570 -1490 0 0 {name=TT_MODELS
+N 3260 -2110 3260 -2090 {
+lab=vss}
+N 3260 -2110 3270 -2110 {
+lab=vss}
+N 3460 -2050 3460 -1970 {
+lab=GND}
+N 3290 -2010 3290 -1970 {
+lab=GND}
+N 3210 -2150 3290 -2150 {
+lab=cp_out}
+N 3290 -2150 3460 -2150 {
+lab=cp_out}
+N 3140 -1970 3290 -1970 {
+lab=GND}
+N 3290 -1970 3460 -1970 {
+lab=GND}
+C {pfd/pfd.sym} 2720 -2150 0 0 {name=x1}
+C {cp/cp.sym} 3140 -2150 0 0 {name=x2}
+C {devices/vsource.sym} 2010 -1910 0 0 {name=V3 value="pulse(0 1.8 1u 1n 1n 125n 250n 22) " savecurrent=false}
+C {devices/gnd.sym} 2010 -1850 0 0 {name=l4 lab=GND}
+C {devices/lab_wire.sym} 2010 -2170 0 0 {name=p6 sig_type=std_logic lab=A}
+C {devices/code.sym} 2100 -1820 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
@@ -189,11 +181,11 @@ value="
 
 "
 spice_ignore=false}
-C {devices/vsource.sym} 710 -2030 0 0 {name=V4 value=1.8 savecurrent=false
+C {devices/vsource.sym} 2240 -2360 0 0 {name=V4 value=1.8 savecurrent=false
 }
-C {devices/gnd.sym} 710 -2000 0 0 {name=l7 lab=GND}
-C {devices/lab_wire.sym} 710 -2080 0 0 {name=p9 sig_type=std_logic lab=VDD}
-C {devices/code_shown.sym} 1260 -950 0 0 {name=STIMULI
+C {devices/gnd.sym} 2240 -2330 0 0 {name=l7 lab=GND}
+C {devices/lab_wire.sym} 2240 -2410 0 0 {name=p9 sig_type=std_logic lab=VDD}
+C {devices/code_shown.sym} 990 -2320 0 0 {name=STIMULI
 only_toplevel=true
 value="
 .options acct list
@@ -251,63 +243,44 @@ write pll_complete.raw
 .endc
 "
 spice_ignore=true}
-C {devices/vsource.sym} 860 -2030 0 0 {name=V9 value=1 savecurrent=false
+C {devices/vsource.sym} 2390 -2360 0 0 {name=V9 value=1 savecurrent=false
 }
-C {devices/gnd.sym} 860 -2000 0 0 {name=l13 lab=GND}
-C {devices/lab_wire.sym} 860 -2080 0 0 {name=p17 sig_type=std_logic lab=cp_bias}
-C {devices/capa-2.sym} 1710 -1710 0 0 {name=C2
-m=1
-value=C1
-footprint=1206
-device=polarized_capacitor}
-C {devices/gnd.sym} 1710 -1680 0 0 {name=l12 lab=GND}
-C {devices/lab_wire.sym} 1690 -1820 1 0 {name=p16 sig_type=std_logic lab=cp_out}
-C {devices/gnd.sym} 1420 -1640 0 0 {name=l1 lab=GND}
-C {devices/lab_wire.sym} 1400 -1960 0 0 {name=p1 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 1010 -1850 0 0 {name=p2 sig_type=std_logic lab=A}
-C {devices/lab_wire.sym} 1010 -1790 0 0 {name=p4 sig_type=std_logic lab=B}
-C {devices/lab_wire.sym} 1580 -1890 0 0 {name=p5 sig_type=std_logic lab=cp_bias}
-C {devices/lab_wire.sym} 1370 -1850 0 0 {name=p7 sig_type=std_logic lab=QA}
-C {devices/lab_wire.sym} 1370 -1790 0 0 {name=p8 sig_type=std_logic lab=QB}
-C {devices/launcher.sym} 1620 -1110 0 0 {name=h5
+C {devices/gnd.sym} 2390 -2330 0 0 {name=l13 lab=GND}
+C {devices/lab_wire.sym} 2390 -2410 0 0 {name=p17 sig_type=std_logic lab=cp_bias}
+C {devices/lab_wire.sym} 3220 -2150 1 0 {name=p16 sig_type=std_logic lab=cp_out}
+C {devices/gnd.sym} 2950 -1970 0 0 {name=l1 lab=GND}
+C {devices/lab_wire.sym} 2930 -2290 0 0 {name=p1 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 2540 -2180 0 0 {name=p2 sig_type=std_logic lab=A}
+C {devices/lab_wire.sym} 2540 -2120 0 0 {name=p4 sig_type=std_logic lab=B}
+C {devices/lab_wire.sym} 3110 -2220 0 0 {name=p5 sig_type=std_logic lab=cp_bias}
+C {devices/lab_wire.sym} 2900 -2180 0 0 {name=p7 sig_type=std_logic lab=QA}
+C {devices/lab_wire.sym} 2900 -2120 0 0 {name=p8 sig_type=std_logic lab=QB}
+C {devices/launcher.sym} 3150 -1440 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/pll_complete.raw tran"
 }
-C {devices/vsource.sym} 480 -1790 0 0 {name=V1 value="pulse(0 1.8 11u 1n 1n 42n  84n) " savecurrent=false}
-C {sky130_stdcells/inv_4.sym} 1440 -1850 0 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
-C {devices/lab_wire.sym} 1510 -1830 1 0 {name=p10 sig_type=std_logic lab=QA_B}
-C {devices/launcher.sym} 1610 -1050 0 0 {name=h15
+C {devices/vsource.sym} 2010 -2120 0 0 {name=V1 value="pulse(0 1.8 11u 1n 1n 42n  84n) " savecurrent=false}
+C {sky130_stdcells/inv_4.sym} 2970 -2180 0 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
+C {devices/lab_wire.sym} 3040 -2160 1 0 {name=p10 sig_type=std_logic lab=QA_B}
+C {devices/launcher.sym} 3140 -1380 0 0 {name=h15
 descr="Annotate OP" 
 tclcommand="set show_hidden_texts 1; xschem annotate_op"
 }
-C {vco/vco.sym} 1970 -1820 0 0 {name=x4}
-C {devices/capa-2.sym} 2210 -1770 0 0 {name=C1
+C {vco/vco.sym} 3660 -2150 0 0 {name=x4}
+C {devices/capa-2.sym} 3900 -2100 0 0 {name=C1
 m=1
 value=cload
 footprint=1206
 device=polarized_capacitor
 spice_ignore=true}
-C {devices/gnd.sym} 2210 -1740 0 0 {name=l2 lab=GND
+C {devices/gnd.sym} 3900 -2070 0 0 {name=l2 lab=GND
 spice_ignore=true}
-C {devices/lab_wire.sym} 2070 -1820 1 0 {name=p11 sig_type=std_logic lab=vco_out}
-C {divider/divider.sym} 1590 -1440 0 1 {name=x5}
-C {devices/gnd.sym} 1590 -1360 0 0 {name=l5 lab=GND}
-C {devices/lab_wire.sym} 1590 -1540 0 0 {name=p12 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 480 -1690 0 0 {name=V2 value="pulse(0 1.8 6.5u 1n 1n 62n 124n 36) " savecurrent=false}
-C {devices/res.sym} 1710 -1780 0 0 {name=R1
-value=R1
-footprint=1206
-device=resistor
-m=1}
-C {devices/capa-2.sym} 1800 -1740 0 0 {name=C3
-m=1
-value=C2
-footprint=1206
-device=polarized_capacitor
-}
-C {devices/gnd.sym} 1800 -1710 0 0 {name=l3 lab=GND
-}
-C {devices/code_shown.sym} 360 -970 0 0 {name=STIMULI1
+C {devices/lab_wire.sym} 3760 -2150 1 0 {name=p11 sig_type=std_logic lab=vco_out}
+C {divider/divider.sym} 3120 -1770 0 1 {name=x5}
+C {devices/gnd.sym} 3120 -1690 0 0 {name=l5 lab=GND}
+C {devices/lab_wire.sym} 3120 -1870 0 0 {name=p12 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} 2010 -2020 0 0 {name=V2 value="pulse(0 1.8 6.5u 1n 1n 62n 124n 36) " savecurrent=false}
+C {devices/code_shown.sym} 1010 -3040 0 0 {name=STIMULI1
 only_toplevel=true
 value="
 .options acct list
@@ -346,10 +319,18 @@ set appendwrite
 .endc
 "
 }
-C {devices/spice_probe.sym} 2100 -1820 0 0 {name=p3 attrs=""}
-C {devices/spice_probe.sym} 1750 -1820 0 0 {name=p13 attrs=""}
-C {devices/spice_probe.sym} 1380 -1850 0 0 {name=p14 attrs=""}
-C {devices/spice_probe.sym} 1380 -1790 0 0 {name=p15 attrs=""}
-C {devices/spice_probe.sym} 1530 -1830 0 0 {name=p18 attrs=""}
-C {devices/spice_probe.sym} 1020 -1850 0 0 {name=p19 attrs=""}
-C {devices/spice_probe.sym} 1020 -1790 0 0 {name=p20 attrs=""}
+C {devices/spice_probe.sym} 3790 -2150 0 0 {name=p3 attrs=""}
+C {devices/spice_probe.sym} 3280 -2150 0 0 {name=p13 attrs=""}
+C {devices/spice_probe.sym} 2910 -2180 0 0 {name=p14 attrs=""}
+C {devices/spice_probe.sym} 2910 -2120 0 0 {name=p15 attrs=""}
+C {devices/spice_probe.sym} 3060 -2160 0 0 {name=p18 attrs=""}
+C {devices/spice_probe.sym} 2550 -2180 0 0 {name=p19 attrs=""}
+C {devices/spice_probe.sym} 2550 -2120 0 0 {name=p20 attrs=""}
+C {sky130_fd_pr/res_xhigh_po_1p41.sym} 3290 -2110 0 0 {name=R3
+L=21.2
+model=res_xhigh_po_1p41
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 3290 -2040 0 0 {name=C4 model=cap_mim_m3_1 W=28.6 L=28.8 MF=9 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 3460 -2080 0 0 {name=C5 model=cap_mim_m3_1 W=27.6 L=40 MF=1	 spiceprefix=X}
+C {devices/lab_wire.sym} 3260 -2090 0 0 {name=p22 sig_type=std_logic lab=vss}

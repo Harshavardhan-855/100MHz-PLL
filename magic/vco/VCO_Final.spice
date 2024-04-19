@@ -1,0 +1,43 @@
+* NGSPICE file created from VCO_Final.ext - technology: sky130A
+
+.subckt sky130_fd_sc_hd__inv_2 VPB VNB VPWR VGND Y A
+X0 Y A VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.135 pd=1.27 as=0.26 ps=2.52 w=1 l=0.15
+X1 VGND A Y VNB sky130_fd_pr__nfet_01v8 ad=0.169 pd=1.82 as=0.08775 ps=0.92 w=0.65 l=0.15
+X2 Y A VGND VNB sky130_fd_pr__nfet_01v8 ad=0.08775 pd=0.92 as=0.169 ps=1.82 w=0.65 l=0.15
+X3 VPWR A Y VPB sky130_fd_pr__pfet_01v8_hvt ad=0.26 pd=2.52 as=0.135 ps=1.27 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_BBNS5X a_15_n500# a_n175_n674# a_n73_n500# a_n33_n588#
+X0 a_15_n500# a_n33_n588# a_n73_n500# a_n175_n674# sky130_fd_pr__nfet_01v8 ad=1.45 pd=10.58 as=1.45 ps=10.58 w=5 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XYUFBL a_n73_n80# w_n211_n299# a_15_n80# a_n33_n177#
+X0 a_15_n80# a_n33_n177# a_n73_n80# w_n211_n299# sky130_fd_pr__pfet_01v8 ad=0.232 pd=2.18 as=0.232 ps=2.18 w=0.8 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGA8MR a_n73_n1000# a_n33_n1097# w_n211_n1219# a_15_n1000#
+X0 a_15_n1000# a_n33_n1097# a_n73_n1000# w_n211_n1219# sky130_fd_pr__pfet_01v8 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_MMRDEV a_n258_n80# a_n200_n168# a_n360_n254# a_200_n80#
+X0 a_200_n80# a_n200_n168# a_n258_n80# a_n360_n254# sky130_fd_pr__nfet_01v8 ad=0.232 pd=2.18 as=0.232 ps=2.18 w=0.8 l=2
+.ends
+
+.subckt VCO_Final vdd vss vctrl out
+Xx1 vdd vss vdd vss out x1/A sky130_fd_sc_hd__inv_2
+XM10 x1/A vss m1_1588_2388# m1_3008_2486# sky130_fd_pr__nfet_01v8_BBNS5X
+XM11 vdd vdd m1_3044_5080# m1_3828_4970# sky130_fd_pr__pfet_01v8_XYUFBL
+XM12 m1_3044_5080# x1/A vdd m1_3010_3332# sky130_fd_pr__pfet_01v8_XGA8MR
+XM13 vss vctrl vss m1_1600_4108# sky130_fd_pr__nfet_01v8_MMRDEV
+XM14 m1_1600_4108# vss m1_3010_3332# x1/A sky130_fd_pr__nfet_01v8_BBNS5X
+XM1 m1_3828_4970# vctrl vss vss sky130_fd_pr__nfet_01v8_MMRDEV
+XM2 m1_3828_4970# vdd vdd m1_3828_4970# sky130_fd_pr__pfet_01v8_XYUFBL
+XM3 vdd vdd m1_3378_3812# m1_3828_4970# sky130_fd_pr__pfet_01v8_XYUFBL
+XM4 m1_3378_3812# m1_3010_3332# vdd m1_3008_2486# sky130_fd_pr__pfet_01v8_XGA8MR
+XM5 vss vctrl vss m1_1576_3378# sky130_fd_pr__nfet_01v8_MMRDEV
+XM6 m1_1576_3378# vss m1_3008_2486# m1_3010_3332# sky130_fd_pr__nfet_01v8_BBNS5X
+XM7 vdd vdd m1_3312_2962# m1_3828_4970# sky130_fd_pr__pfet_01v8_XYUFBL
+XM8 m1_3312_2962# m1_3008_2486# vdd x1/A sky130_fd_pr__pfet_01v8_XGA8MR
+XM9 m1_1588_2388# vctrl vss vss sky130_fd_pr__nfet_01v8_MMRDEV
+.ends
+
