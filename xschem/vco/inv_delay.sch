@@ -6,15 +6,15 @@ V {}
 S {}
 E {}
 B 2 -7980 -4410 -7180 -4010 {flags=graph
-y1=-0.00063
+y1=-0.00097
 y2=1.9
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.8440048e-07
-x2=3.1254798e-07
+x1=1.8029368e-07
+x2=2.0021616e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -34,8 +34,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.8440048e-07
-x2=3.1254798e-07
+x1=1.8029368e-07
+x2=2.0021616e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -647,7 +647,7 @@ value="
 
 
 
-.param vctrl=1 vdd=1.8 cload=250f
+.param vctrl=1.29 vdd=1.8 cload=250f
 + td=20n tr=0.1n tw=10n  tp=20n
 
 .control
@@ -656,7 +656,7 @@ write inv_delay.raw
 set appendwrite
 
 tran 0.01n 800n uic
-meas tran tdelay01 TRIG v(out4) VAL=0.9 RISE=6 TARG v(out4) VAL=0.9 RISE=7
+meas tran tdelay01 TRIG v(out4) VAL=0.9 RISE=4 TARG v(out4) VAL=0.9 RISE=5
 let fosc1= 1/tdelay01
 print fosc1
 save fosc1

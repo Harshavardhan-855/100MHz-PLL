@@ -54,7 +54,7 @@ color="15 6"
 node="vco_out
 cp_out"}
 B 2 4190 -3120 6470 -1580 {flags=graph
-y1=-2.1e-05
+y1=-3.2e-05
 y2=1.3
 ypos1=-8.5e-05
 ypos2=1.3
@@ -152,9 +152,9 @@ lab=cp_out}
 N 3460 -2150 3460 -2100 {
 lab=cp_out}
 N 3260 -2110 3260 -2090 {
-lab=vss}
+lab=GND}
 N 3260 -2110 3270 -2110 {
-lab=vss}
+lab=GND}
 N 3460 -2050 3460 -1970 {
 lab=GND}
 N 3290 -2010 3290 -1970 {
@@ -167,11 +167,16 @@ N 3140 -1970 3290 -1970 {
 lab=GND}
 N 3290 -1970 3460 -1970 {
 lab=GND}
+N 3245 -2090 3260 -2090 {
+lab=GND}
 C {pfd/pfd.sym} 2720 -2150 0 0 {name=x1}
 C {cp/cp.sym} 3140 -2150 0 0 {name=x2}
-C {devices/vsource.sym} 2010 -1910 0 0 {name=V3 value="pulse(0 1.8 1u 1n 1n 125n 250n 22) " savecurrent=false}
-C {devices/gnd.sym} 2010 -1850 0 0 {name=l4 lab=GND}
-C {devices/lab_wire.sym} 2010 -2170 0 0 {name=p6 sig_type=std_logic lab=A}
+C {devices/vsource.sym} 2010 -1910 0 0 {name=V3 value="pulse(0 1.8 1u 1n 1n 125n 250n 22) " savecurrent=false
+}
+C {devices/gnd.sym} 2010 -1850 0 0 {name=l4 lab=GND
+}
+C {devices/lab_wire.sym} 2010 -2170 0 0 {name=p6 sig_type=std_logic lab=A
+}
 C {devices/code.sym} 2100 -1820 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
@@ -259,7 +264,8 @@ C {devices/launcher.sym} 3150 -1440 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/pll_complete.raw tran"
 }
-C {devices/vsource.sym} 2010 -2120 0 0 {name=V1 value="pulse(0 1.8 11u 1n 1n 42n  84n) " savecurrent=false}
+C {devices/vsource.sym} 2010 -2120 0 0 {name=V1 value="pulse(0 1.8 11u 1n 1n 42n  84n) " savecurrent=false
+}
 C {sky130_stdcells/inv_4.sym} 2970 -2180 0 0 {name=x3 VGND=GND VNB=GND VPB=VDD VPWR=VDD prefix=sky130_fd_sc_hd__ }
 C {devices/lab_wire.sym} 3040 -2160 1 0 {name=p10 sig_type=std_logic lab=QA_B}
 C {devices/launcher.sym} 3140 -1380 0 0 {name=h15
@@ -279,7 +285,8 @@ C {devices/lab_wire.sym} 3760 -2150 1 0 {name=p11 sig_type=std_logic lab=vco_out
 C {divider/divider.sym} 3120 -1770 0 1 {name=x5}
 C {devices/gnd.sym} 3120 -1690 0 0 {name=l5 lab=GND}
 C {devices/lab_wire.sym} 3120 -1870 0 0 {name=p12 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 2010 -2020 0 0 {name=V2 value="pulse(0 1.8 6.5u 1n 1n 62n 124n 36) " savecurrent=false}
+C {devices/vsource.sym} 2010 -2020 0 0 {name=V2 value="pulse(0 1.8 6.5u 1n 1n 62n 124n 36) " savecurrent=false
+}
 C {devices/code_shown.sym} 1010 -3040 0 0 {name=STIMULI1
 only_toplevel=true
 value="
@@ -333,4 +340,5 @@ spiceprefix=X
 mult=1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 3290 -2040 0 0 {name=C4 model=cap_mim_m3_1 W=28.6 L=28.8 MF=9 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 3460 -2080 0 0 {name=C5 model=cap_mim_m3_1 W=27.6 L=40 MF=1	 spiceprefix=X}
-C {devices/lab_wire.sym} 3260 -2090 0 0 {name=p22 sig_type=std_logic lab=vss}
+C {devices/gnd.sym} 2950 -1970 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 3245 -2090 0 0 {name=l6 lab=GND}
